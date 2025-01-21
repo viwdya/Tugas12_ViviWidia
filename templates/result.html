@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queuing Model Kalkulator M/M/2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Queuing Model Kalkulator M/M/2</h1>
+        <h2>by Vivi Widia</h2>
+    </header>
+    <div class="container">
+        <h3>Hasil Perhitungan</h3>
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>Nilai</th>
+            </tr>
+            <tr>
+                <td>Laju Kedatangan (λ)</td>
+                <td>{{ results['arrival_rate'] }}</td>
+            </tr>
+            <tr>
+                <td>Laju Pelayanan (μ)</td>
+                <td>{{ results['service_rate'] }}</td>
+            </tr>
+            <tr>
+                <td>Pemanfaatan Pelayan (ρ)</td>
+                <td>{{ results['utilization'] }}</td>
+            </tr>
+            <tr>
+                <td>Waktu Rata-rata dalam Sistem (W)</td>
+                <td>{{ results['average_time_in_system'] }}</td>
+            </tr>
+            <tr>
+                <td>Waktu Rata-rata Tunggu dalam Antrian (Wq)</td>
+                <td>{{ results['average_time_in_queue'] }}</td>
+            </tr>
+        </table>
+        <h3>Langkah-Langkah Perhitungan</h3>
+        <ul>
+            {% for step in results['steps'] %}
+            <li>{{ step }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="button">Kembali</a>
+    </div>
+    <footer>
+        &copy; 2025 Vivi Widia
+    </footer>
+</body>
+</html>

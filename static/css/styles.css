@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;  /* Larger title size */
+    color: #6a0dad;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #6a0dad;
+    margin-top: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;  /* Ensure H3 is also centered */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5a0dac;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #6a0dad;
+    color: white;
+}
+
+ul {
+    text-align: left;
+    margin-top: 20px;
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #333;
+    white-space: pre-wrap;  /* Ensure multi-line fractions or text wrap correctly */
+    word-wrap: break-word;  /* Prevent overflow issues */
+}
+
+.button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    background-color: #6a0dad;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #5a0dac;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #777;
+}

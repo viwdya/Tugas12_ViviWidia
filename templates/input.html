@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queuing Model Kalkulator M/M/2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Queuing Model Kalkulator M/M/2</h1>
+        <h2>by Vivi Widia</h2>
+    </header>
+    <div class="container">
+        <h3>Masukkan Data</h3>
+        <form action="/result" method="POST">
+            <label for="interarrival_time">Waktu Antar Kedatangan (menit):</label>
+            <input type="number" id="interarrival_time" name="interarrival_time" step="0.01" required>
+            <label for="service_time">Waktu Pelayanan per Pelayan (menit):</label>
+            <input type="number" id="service_time" name="service_time" step="0.01" required>
+            <button type="submit">Hitung</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 Vivi Widia
+    </footer>
+</body>
+</html>
